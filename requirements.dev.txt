@@ -1,5 +1,7 @@
-pytest
-pytest-django
-pytest-benchmark
-ipython
-ipdb
+pytest # Test Framework
+pytest-django # Test plugin for Django
+pytest-benchmark # Test plugin for benchmarking performance
+ipython # Python Shell
+ipdb # Debugger
+pylint # Linter.
+autopep8 # Auto formatter
