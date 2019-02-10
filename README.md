@@ -67,6 +67,7 @@ As i'm a Full Stack Data Scientist Developer and wan't to keep things simple I s
 ##### Development
 
 * **Make file**: [pymake](https://github.com/tqdm/py-make)
+* **Documentation** [Sphinx](http://www.sphinx-doc.org/en/master/) ([Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html))
 
 ##### Django
 

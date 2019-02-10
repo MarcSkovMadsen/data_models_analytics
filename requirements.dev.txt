@@ -5,3 +5,4 @@ ipython # Python Shell
 ipdb # Debugger
 pylint # Linter.
 autopep8 # Auto formatter
+sphinx

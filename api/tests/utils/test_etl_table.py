@@ -52,16 +52,16 @@ def Model():
             self.imported = imported
             self.value = value
 
-        def __str__():
+        def __str__(self):
             return self.name
 
         def __eq__(self, other):
             return (
-                self.id == id and
-                self.name == name and
-                self.published == published and
-                self.imported == imported and
-                self.value == value
+                self.id == self.id and
+                self.name == self.name and
+                self.published == self.published and
+                self.imported == self.imported and
+                self.value == self.value
 
             )
 
