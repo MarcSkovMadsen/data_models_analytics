@@ -15,7 +15,7 @@ Introduction
 
 I'm `Marc Skov Madsen`_, PhD, CFA® and Lead Data Scientist Developer at Ørsted_.
 
-This repository contains a description of and ready to use version of my favourite paradigm for building internal web solutions and applications for data, models and analytics in an enterprise setting. This platform can handle many data and data with a lot of business/ domain complexity. It is not a paradigm for "Big Data" though.
+This repository contains a description of and ready to use version of my favourite paradigm for building internal web solutions and applications for data, models and analytics in an enterprise setting.
 
 .. image:: /architecture.svg
 
