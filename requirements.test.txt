@@ -1,0 +1,9 @@
+# Install this if you wan't to do testing
+
+# Python
+ipdb # Debugger
+pytest # Test Framework
+pytest-benchmark # Test plugin for benchmarking performance
+
+# Django
+pytest-django # Test plugin for Django

@@ -3,12 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Data, Models and Analytics's documentation!
+Data, Models and Analytics's Paradigm documentation!
 ======================================================
 
+Last Update: 2019-02-17
+
+Status: ALPHA
+
+Introduction
+------------
+
+I'm `Marc Skov Madsen`_, PhD, CFA® and Lead Data Scientist Developer at Ørsted_.
+
+This repository contains a description of and ready to use version of my favourite paradigm for building internal web solutions and applications for data, models and analytics in an enterprise setting.
+
+.. image:: /architecture.svg
+
+.. _Marc Skov Madsen: https://www.linkedin.com/in/marcskovmadsen/
+.. _Ørsted: https://www.orsted.com
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   stack
 
 
 

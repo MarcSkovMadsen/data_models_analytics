@@ -10,7 +10,7 @@ I'm [Marc Skov Madsen], PhD, CFA® and Lead Data Scientist Developer at [Ørsted
 
 This repository contains a description of and ready to use version of my favourite paradigm for building internal web solutions and applications for data, models and analytics in an enterprise setting.
 
-As i'm a Full Stack Data Scientist Developer and wan't to keep things simple I stick to Python as my language of choice where ever possible.
+As i'm a Full Stack Data Scientist Developer and wan't to keep things simple, I stick to Python as my language of choice where ever possible.
 
 ![alt text][architecture]
 
@@ -58,16 +58,18 @@ As i'm a Full Stack Data Scientist Developer and wan't to keep things simple I s
 
 #### Python Packages
 
+##### Development
+
+* **Make file**: [pymake](https://github.com/tqdm/py-make)
+* **Documentation** [Sphinx](http://www.sphinx-doc.org/en/master/) ([Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html), [Quick Start](https://www.sphinx-doc.org/en/master/usage/quickstart.html))
+    * Theme: [Read the Docs Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html)
+    * Restructured Text: [recommonmark](https://recommonmark.readthedocs.io/en/latest/)
+
 ##### Testing
 
 * **Test Framework**: pytest
 * **Profiling**: pytest-profiling
 * **Browser testing**: Selenium
-
-##### Development
-
-* **Make file**: [pymake](https://github.com/tqdm/py-make)
-* **Documentation** [Sphinx](http://www.sphinx-doc.org/en/master/) ([Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html))
 
 ##### Django
 
@@ -110,6 +112,8 @@ As i'm a Full Stack Data Scientist Developer and wan't to keep things simple I s
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Angular Kick Starter](https://github.com/wulfsberg/angular-material-kickstart)
 * [Python and Django tutorial in VS Code](https://code.visualstudio.com/docs/python/tutorial-django)
+
+
 
 ## How to setup the project
 

@@ -1,8 +1,8 @@
-pytest # Test Framework
-pytest-django # Test plugin for Django
-pytest-benchmark # Test plugin for benchmarking performance
+# Install this if you wan't to develop the platform
+# (For testing see requirements.test.text)
 ipython # Python Shell
-ipdb # Debugger
 pylint # Linter.
-autopep8 # Auto formatter
-sphinx
+black # Auto formatter.
+sphinx # Documentation
+sphinx_rtd_theme # Documentation theme
+recommonmark # Documentation using Markdown

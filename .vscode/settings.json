@@ -11,5 +11,6 @@
     ],
     "python.envFile": "${workspaceFolder}/.env_local_marc",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}\\docs\\source"
 }
