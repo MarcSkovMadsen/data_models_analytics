@@ -232,6 +232,10 @@ ACCOUNT_ADAPTER = "backend.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "backend.users.adapters.SocialAccountAdapter"
 
+# django-docs
+DOCS_ROOT = str(ROOT_DIR("docs/_build/html"))
+DOCS_URL = "/docs/"
+DOCS_ACCESS = "staff"
 
 # Your stuff...
 # ------------------------------------------------------------------------------

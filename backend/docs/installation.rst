@@ -1,6 +1,6 @@
-==================================
-Notes on installation from scratch
-==================================
+====================================
+Setting up the paradigm from scratch
+====================================
 
 Prerequisites:
 
@@ -41,8 +41,12 @@ Steps:
     pip install "cookiecutter>=1.4.0"
     cookiecutter https://github.com/pydanny/cookiecutter-django
 
-As timezone I use 'Europe/Copenhagen'
-To create the datase I had to do createdb --port=5433 --username=postgres data_models_analytics
+- As timezone I use 'Europe/Copenhagen'
+- To create the datase I had to do run
+
+.. code-block:: bash
+
+    createdb --port=5433 --username=postgres data_models_analytics
 
 .. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
 

@@ -1,8 +1,18 @@
 -r ./base.txt
 
-Werkzeug==0.14.1  # https://github.com/pallets/werkzeug
-ipdb==0.11  # https://github.com/gotcha/ipdb
+# Utils
+# ------------------------------------------------------------------------------
+ipython # Python Shell
+py-make # Brings basic Makefile support to any system with Python
+
+# Documentation
+# ------------------------------------------------------------------------------
 Sphinx==1.8.4  # https://github.com/sphinx-doc/sphinx
+sphinx_rtd_theme # Documentation theme
+recommonmark # Documentation using Markdown
+sphinx-autobuild # Auto build and live reload server
+
+Werkzeug==0.14.1  # https://github.com/pallets/werkzeug
 psycopg2-binary==2.7.7  # https://github.com/psycopg/psycopg2
 
 # Testing
@@ -10,10 +20,13 @@ psycopg2-binary==2.7.7  # https://github.com/psycopg/psycopg2
 mypy==0.670  # https://github.com/python/mypy
 pytest==4.2.0  # https://github.com/pytest-dev/pytest
 pytest-sugar==0.9.2  # https://github.com/Frozenball/pytest-sugar
+ipdb==0.11  # https://github.com/gotcha/ipdb
 
 # Code quality
 # ------------------------------------------------------------------------------
 # flake8==3.7.5  # https://github.com/PyCQA/flake8
+pylint # Linter.
+black # Auto formatter.
 coverage==4.5.2  # https://github.com/nedbat/coveragepy
 
 # Django
@@ -22,9 +35,9 @@ factory-boy==2.11.1  # https://github.com/FactoryBoy/factory_boy
 
 django-debug-toolbar==1.11  # https://github.com/jazzband/django-debug-toolbar
 django-extensions==2.1.5  # https://github.com/django-extensions/django-extensions
+gprof2dot # Package needed to create UML Model diagrams using django-extensions
+graphviz # Package needed to create UML Model diagrams using django-extensions
 django-coverage-plugin==1.6.0  # https://github.com/nedbat/django_coverage_plugin
 pytest-django==3.4.7  # https://github.com/pytest-dev/pytest-django
 pylint-django #https://stackoverflow.com/questions/45135263/class-has-no-objects-membergprof2dot==2017.9.19
 
-gprof2dot
-graphviz

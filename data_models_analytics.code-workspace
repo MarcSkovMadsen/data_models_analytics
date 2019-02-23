@@ -5,9 +5,9 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": ".venv\\Scripts\\python.exe",
 		"terminal.integrated.env.windows": {
 			"DJANGO_READ_DOT_ENV_FILE": "True"
-		}
+		},
+		"python.envFile": "${workspaceFolder}/.env_local_masma"
 	}
 }
