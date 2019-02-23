@@ -1,18 +1,14 @@
+-r backend/requirements/local.txt
+
 # Install this if you wan't to develop the platform
 # (For testing see requirements.test.text)
 ipython # Python Shell
 pylint # Linter.
 black # Auto formatter.
-pymake # Brings basic Makefile support to any system with Python
-
-# Django
-django-extensions
-gprof2dot
-graphviz
-pylint-django #https://stackoverflow.com/questions/45135263/class-has-no-objects-membergprof2dot==2017.9.19
+py-make # Brings basic Makefile support to any system with Python
 
 # Sphinx Documentation
-sphinx
+# sphinx
 sphinx_rtd_theme # Documentation theme
 recommonmark # Documentation using Markdown
 sphinx-autobuild # Auto build and live reload server

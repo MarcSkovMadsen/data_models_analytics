@@ -1,1 +1,2 @@
 -r api/src/data_models_analytics/requirements.txt
+-r backend/requirements/base.txt
