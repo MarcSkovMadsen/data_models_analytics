@@ -54,14 +54,18 @@ The below packages are listed in my `requirements.dev.text`_ file.
 - **Documentation** Sphinx_ (`Docs <Sphinx Docs>`_, `Quick Start <Sphinx Quick Start>`_, `Cheat Sheet <Sphinx Cheat Sheet>`_, `Practical Intro <Sphinx Practical Intro>`_, `Django <Sphinx Django>`_)
     - Theme: `Read the Docs theme`_
     - Markdown: Recommonmark_
+    - Autobuild: SphinxAutoLoad_
 - **Linter**: Pylint
 - **Make file**: Pymake_
 - **Shell**: Ipython
 
-
-
 Test
 ^^^^
+
+All
+^^^
+
+- **Pipenv** (`Docs <PipenvDocs>`_, `Tutorial <PipenvTutorial>`_)
 
 The below packages are listed in my `requirements.test.text`_ file.
 
@@ -71,6 +75,8 @@ The below packages are listed in my `requirements.test.text`_ file.
 
 .. _requirements.test.text: ../../../requirements.test.txt
 .. _requirements.dev.text: ../../../requirements.dev.txt
+.. _PipenvDocs: https://pipenv.readthedocs.io/en/latest/
+.. _PipenvTutorial: https://realpython.com/pipenv-guide/
 .. _Django: https://www.djangoproject.com/
 .. _Django REST Framework:  https://www.django-rest-framework.org/
 .. _Python: https://www.python.org/
@@ -98,6 +104,7 @@ The below packages are listed in my `requirements.test.text`_ file.
 .. _Sphinx Cheat Sheet : https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 .. _Sphinx Practical Intro: https://youtu.be/0ROZRNZkPS8
 .. _Sphinx Django: https://medium.freecodecamp.org/sphinx-for-django-documentation-2454e924b3bc
+.. _SphinxAutoLoad: https://github.com/GaretJax/sphinx-autobuild
 .. _Read the Docs theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html
 .. _Recommonmark: https://recommonmark.readthedocs.io/en/latest/
 .. _VS Code Django Tutorial: https://code.visualstudio.com/docs/python/tutorial-django

@@ -26,6 +26,7 @@ This repository contains a description of and ready to use version of my favouri
    :caption: Contents:
 
    stack
+   installation
 
 
 

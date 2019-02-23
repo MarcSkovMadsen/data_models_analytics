@@ -3,6 +3,7 @@
 ipython # Python Shell
 pylint # Linter.
 black # Auto formatter.
+pymake # Brings basic Makefile support to any system with Python
 
 # Django
 django-extensions
