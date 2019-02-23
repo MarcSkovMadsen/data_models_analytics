@@ -1,0 +1,20 @@
+==================================
+Notes on installation from scratch
+==================================
+
+1. Install (latest version of) python from PythonOrg_
+2. Create a virtual environment
+
+.. code-block:: bash
+    pip install virtualenv
+    virtualenv .venv
+    .venv/Scripts/activate
+
+3. Install the requirements
+.. code-block:: bash
+    pip install -r requirements.txt
+    pip install -r requirements.dev.txt
+    pip install -r requirements.test.txt
+
+
+.. _PythonOrg: www.python.org

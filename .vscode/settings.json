@@ -1,16 +1,4 @@
 {
-    "python.pythonPath": ".venv\\Scripts\\python.exe",
-    "python.venvFolders": [
-        "${workspaceFolder}/.venv",
-    ],
-    "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}\\api\\src"
-    },
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}\\api\\src"
-    ],
-    "python.envFile": "${workspaceFolder}/.env_local_marc",
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "restructuredtext.confPath": "${workspaceFolder}\\docs\\source"
+    "restructuredtext.confPath": "${workspaceFolder}\\docs",
+    "python.pythonPath": ".venv\\Scripts\\python.exe"
 }

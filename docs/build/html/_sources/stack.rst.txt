@@ -35,7 +35,7 @@ Technologies
 Tools
 =====
 
-- **Code Editor**: `Visual Studio Code`_
+- **Code Editor**: `Visual Studio Code`_ (`VS Code Django Tutorial`_, `VS Code Angular Tutorial`_)
 - **Git Cli**: `Git`_
 - **Diagram Editor**: Dia_
 
@@ -100,7 +100,8 @@ The below packages are listed in my `requirements.test.text`_ file.
 .. _Sphinx Django: https://medium.freecodecamp.org/sphinx-for-django-documentation-2454e924b3bc
 .. _Read the Docs theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html
 .. _Recommonmark: https://recommonmark.readthedocs.io/en/latest/
-
+.. _VS Code Django Tutorial: https://code.visualstudio.com/docs/python/tutorial-django
+.. _VS Code Angular Tutorial: https://code.visualstudio.com/docs/nodejs/angular-tutorial
 
 
 

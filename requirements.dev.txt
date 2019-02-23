@@ -3,6 +3,15 @@
 ipython # Python Shell
 pylint # Linter.
 black # Auto formatter.
-sphinx # Documentation
+
+# Django
+django-extensions
+gprof2dot
+graphviz
+pylint-django #https://stackoverflow.com/questions/45135263/class-has-no-objects-membergprof2dot==2017.9.19
+
+# Sphinx Documentation
+sphinx
 sphinx_rtd_theme # Documentation theme
 recommonmark # Documentation using Markdown
+sphinx-autobuild # Auto build and live reload server
