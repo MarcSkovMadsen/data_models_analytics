@@ -54,6 +54,23 @@ Customizations
 - Rename backend to apps to dedicated apps folder and fix APP_ROOT in base.py and imports backend.users
 - Move docs to docs app and setup urls and test_urls.py
 
+5. Setup PYTEST and VS Code for integrated usage
+
+See
+- pytest.ini files
+- .env_local_masma or .env files
+- vscode settings.json files
+
+When you are done you should be able to succesfully run 'Python: Discover Unit Tests" in VS Code
+and in a terminal
+
+.. code-block: bash
+
+    pytest
+
+.. code-block: bash
+
+    backend$ pytest
 
 .. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
 .. _PythonOrg: www.python.org
