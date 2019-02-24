@@ -42,7 +42,7 @@ Steps:
     cookiecutter https://github.com/pydanny/cookiecutter-django
 
 - As timezone I use 'Europe/Copenhagen'
-- To create the datase I had to do run
+- To create the datase I had to run
 
 .. code-block:: bash
 
@@ -50,9 +50,9 @@ Steps:
 
 Customizations
 - insert __init__.py file project root. If not pylint cannot be used from parent folder.
-- Move apps to dedicated apps folder
 - Search and Replace python version '3.6' with '3.7' or similar.
-- Move docs to docs app
+- Rename backend to apps to dedicated apps folder and fix APP_ROOT in base.py and imports backend.users
+- Move docs to docs app and setup urls and test_urls.py
 
 
 .. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
