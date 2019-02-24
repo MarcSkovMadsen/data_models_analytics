@@ -1,10 +1,9 @@
 from django.conf import settings
-from django.urls import include, path, re_path
+from django.urls import include, path
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
-from django.views.static import serve
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -15,10 +14,9 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("users/", include("apps.users.urls", namespace="users")),
+    path("docs/", include("apps.docs.urls", namespace="docs")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path("docs/", serve, {"document_root": settings.DOCS_ROOT, "path": "index.html"}),
-    re_path("docs/(?P<path>.*)$", serve, {"document_root": settings.DOCS_ROOT}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

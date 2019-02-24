@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"terminal.integrated.env.windows": {
-			"DJANGO_READ_DOT_ENV_FILE": "True"
+			"DJANGO_READ_DOT_ENV_FILE": "True",
+			"PYTHONPATH": "C:\\repos\\private\\data_models_analytics\\backend"
 		},
 		"python.envFile": "${workspaceFolder}/.env_local_masma"
 	}

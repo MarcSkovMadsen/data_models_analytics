@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WORK_DIR="$(dirname "$0")"
-PROJECT_DIR="$(dirname "$WORK_DIR")"
+APPS_DIR="$(dirname "$WORK_DIR")"
 
 pip --version >/dev/null 2>&1 || {
     echo >&2 -e "\npip is required but it's not installed."
@@ -34,6 +34,6 @@ if [ -z "$VIRTUAL_ENV" ]; then
     exit 1;
 else
 
-    pip install -r $PROJECT_DIR/requirements/local.txt
-    pip install -r $PROJECT_DIR/requirements.txt
+    pip install -r $APPS_DIR/requirements/local.txt
+    pip install -r $APPS_DIR/requirements.txt
 fi
