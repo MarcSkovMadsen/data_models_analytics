@@ -1,0 +1,19 @@
+<div *ngIf="post; else elseBlock">
+  <mat-card>
+    <mat-card-title id="title">
+      {{post.title}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      By <span id="author ">{{post.author}}</span><br/> Last update: <span id="last_update ">{{post.last_update | date}}</span>,
+      Created: <span id="created ">{{post.created | date}}</span>
+    </mat-card-subtitle>
+    <mat-card-content [innerHTML]="post.content_html" id="content ">
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button [routerLink]="[ '/posts/edit/', post.id] ">Edit</button>
+      <button mat-raised-button [routerLink]="[ '/posts/'] ">More posts</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<ng-template #elseBlock>Loading post...</ng-template>

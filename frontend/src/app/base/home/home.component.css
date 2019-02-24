@@ -1,0 +1,10 @@
+mat-card{
+    min-height: 300px;
+}
+.fab.fas{
+    font-size:24px;
+    margin-top: 0px;
+}
+a{
+    color: inherit;
+}

@@ -1,0 +1,11 @@
+<div *ngFor="let post of posts">
+  <mat-card>
+    <mat-card-content>
+      <a [routerLink]="['/posts', post.id]" id="post{{post.id}}_link">
+        <h1>{{post.title}}</h1>
+        <span>by {{post.author}}</span><br/>
+        <span>Last update: </span>{{post.last_update | date}}, <span>Created: </span>{{post.created | date}}
+      </a>
+    </mat-card-content>
+  </mat-card>
+</div>

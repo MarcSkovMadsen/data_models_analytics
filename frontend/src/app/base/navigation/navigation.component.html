@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="secondary" id="toggle_sidenav_button">
+    <i class="material-icons">menu</i>
+  </button><br>
+  <span id="page_title" routerLink=''>&nbsp;{{title}}</span>
+  <span class="toolbar-spacer"></span>
+  <button id="login_button" mat-button routerLink='login'>Login</button>
+
+</mat-toolbar>
+<mat-card>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #drawer mode="side" role="navigation" [opened]="false" [disableClose]="false" #sidenav (click)="sidenav.toggle()">
+      <mat-nav-list>
+        <mat-list-item routerLink='' id="home_link">Home</mat-list-item>
+        <mat-list-item routerLink='posts' id="posts_link">Posts</mat-list-item>
+        <!-- <mat-nav-list style="margin-left:10px;">
+          <mat-list-item routerLink=''>Item 1</mat-list-item>
+          <mat-list-item routerLink=''>Item 2</mat-list-item>
+        </mat-nav-list> -->
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div id="main-content" width="100%">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-card>

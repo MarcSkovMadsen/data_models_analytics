@@ -1,0 +1,39 @@
+<div *ngIf="post; else elseBlock">
+  <mat-card [hidden]="edit">
+    {{post.content_markdown}}
+    <mat-card-title id="title">
+      {{post.title}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      By <span id="author ">{{post.author}}</span><br/> Last update: <span id="last_update ">{{post.last_update | date}}</span>,
+      Created: <span id="created ">{{post.created | date}}</span>
+    </mat-card-subtitle>
+    <mat-card-content [innerHTML]="post.content_html " id="content ">
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="[ '/posts/'] ">More posts</button>
+      <button mat-button (click)="savePost()">Save</button>
+      <app-read-file (result)="handleresult($event)">Upload Markdown</app-read-file>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card [hidden]="!edit" class="edit-card">
+    <mat-card-title id=" title ">
+      <mat-form-field>
+        <input matInput placeholder="Title " [(ngModel)]="post.title ">
+      </mat-form-field>
+    </mat-card-title>
+    <!-- <mat-card-subtitle> By <span id="author ">{{post.author}}</span><br/> Last update:
+      <span id="last_update ">{{post.last_update | date}}</span>, Created: <span id="created ">{{post.created | date}}</span>
+    </mat-card-subtitle> -->
+    <mat-card-content>
+      <mat-form-field>
+        <textarea matInput placeholder="Content" [(ngModel)]="post.content_markdown" id="content_markdown"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="addPost() ">Save</button>
+      <app-read-file (result)="handleresult($event)">Upload Markdown</app-read-file>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<ng-template #elseBlock>Loading post...</ng-template>

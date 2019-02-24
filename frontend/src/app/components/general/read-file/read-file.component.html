@@ -1,0 +1,2 @@
+<button mat-raised-button (click)="openInput()" matTooltip="Click here to read content from markdown file"><ng-content></ng-content></button>
+<input hidden type="file" id="fileInput" (change)="handleFileInput($event.target.files)" accept=".md">
