@@ -50,7 +50,7 @@ Steps:
 
 Customizations
 - Move apps to dedicated apps folder
--
+- Search and Replace python version '3.6' with '3.7' or similar.
 
 
 .. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
