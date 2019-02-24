@@ -48,8 +48,12 @@ Steps:
 
     createdb --port=5433 --username=postgres data_models_analytics
 
-.. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
+Customizations
+- Move apps to dedicated apps folder
+-
 
+
+.. _CookiecutterDjango: https://github.com/pydanny/cookiecutter-django
 .. _PythonOrg: www.python.org
 .. _GitScm: https://git-scm.com
 .. _Postgres: https://www.postgresql.org/
