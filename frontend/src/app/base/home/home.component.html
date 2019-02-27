@@ -1,54 +1,37 @@
 <mat-card>
-  <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
-    <div fxFlex="35" class="sec1">
-      <h3>Marc Skov Madsen, <span matTooltip="I hold a PhD in Mathematics from the University of Aarhus, Denmark. My thesis was about elliptic curves and their applicaion in cryptography.">PhD</span>,
-        <span matTooltip="The Chartered Financial Analyst (CFA) Program is a professional credential offered internationally by the American-based CFA Institute to investment and financial professionals. The program covers a broad range of topics relating to investment management, financial analysis, stocks, bonds and derivatives, and provides a generalist knowledge of other areas of finance. Successful candidates take an average of four years to earn their CFA charter. According to the CFA Institute, fewer than 20% of candidates who begin the program receive the CFA Charter.">CFA<i
-            class="far fa-copyright" *ngIf="false"></i></span></h3>
-      <h4>Lead Data Science Developer, <a href="https://orsted.com/" target="_blank"> Ørsted A/S</a></h4>
-      <p>Expert in Data, Models and Analytics for managing financial and physical assets.</p>
-      <mat-list>
-        <mat-list-item><a href="https://www.google.dk/maps/place/7080+B%C3%B8rkop/@55.6619265,7.4192274,7z/data=!4m5!3m4!1s0x464c9ad4fa9c7ca3:0x7fe8dbad8bce853e!8m2!3d55.640666!4d9.6518059"
-            target="_blank"><i class="fas fa-map-marker-alt"></i> Børkop, Denmark</a></mat-list-item>
-        <mat-list-item><a href="mailto:marc.skov.madsen@gmail.com"><i class="fas fa-envelope-square"></i> Email</a></mat-list-item>
-        <mat-list-item><a href="https://www.facebook.com/marc.skov.madsen" target="_blank"><i class="fab fa-facebook"></i>
-            Facebook
-          </a></mat-list-item>
-        <mat-list-item><a href="https://www.linkedin.com/in/marcskovmadsen/" target="_blank"><i class="fab fa-linkedin"></i>
-            Linked In</a></mat-list-item>
-        <mat-list-item *ngIf="showAllLinks"><a href=" https://twitter.com/MarcSkovMadsen " target="_blank "><i class="fab fa-twitter "></i>
-            Twitter</a></mat-list-item>
-
-        <mat-list-item><a href="https://github.com/MarcSkovMadsen/ " target="_blank "><i class="fab fa-github "></i>
-            GitHub
-          </a></mat-list-item>
-        <mat-list-item *ngIf="showAllLinks "><a href="https://marcskovmadsen.visualstudio.com " target="_blank
-          "><i class="fas fa-code "></i>
-            VSTS
-          </a></mat-list-item>
-        <mat-list-item *ngIf="showAllLinks "><a href="https://bitbucket.org/marcskovmadsen/ " target="_blank
-          "><i class="fab fa-bitbucket "></i>
-            Bit Bucket
-          </a></mat-list-item>
-        <mat-list-item><a href="https://www.strava.com/athletes/7586499 " target="_blank
-            "><i class="fab fa-strava "></i>
-            Strava
-          </a></mat-list-item>
-
-        <mat-list-item *ngIf="showAllLinks "><i class="fas fa-bicycle "></i>&nbsp;<a href="http://www.bmc-cykling.com/ ">BMC</a>,&nbsp;<a
-            href="http://teamwbr.org/racing.html ">Team WBR
-          </a></mat-list-item>
-        <mat-list-item *ngIf="showAllLinks "><a href="https://zwiftpower.com/profile.php?z=81779 "><i class="fas fa-bolt "></i>
-            Zwift Power</a></mat-list-item>
-        <button mat-button *ngIf="!showAllLinks " (click)="showAllLinks=true " matTooltip="Show all links "><i class="fas
-              fa-caret-down "></i></button>
-        <button mat-button *ngIf="showAllLinks " (click)="showAllLinks=false " matTooltip="Show less links "><i class="fas
-          fa-caret-up "></i></button>
-      </mat-list>
-    </div>
-    <div fxFlex="65 " class="sec2 " fxFlex.xs="15 ">
-      Second
-    </div>
-  </div>
+  <mat-card-title>Welcome to Data, Models and Analytics</mat-card-title>
+  <mat-card-content>
+    <p>
+      This site exists to document, share and discuss my knowledge of Data, Models and Analytics in an enterprise
+      setting.
+    </p>
+    <p>
+      I originally developed this site to share a real life example of my favourite paradigm for developing web services
+      and applications for Data, Models and Analytics in an Enterprise setting. You can read the details in the Docs and
+      find the Source on
+      Github.
+    </p>
+    <p>I hope you find this site useful. Feel free to reach out.</p>
+    <p>Marc Skov Madsen, PhD (Math), CFA®</p>
+    <p>Lead Data Science Developer at <a href="https://orsted.com/" target="_blank">Ørsted</a></p>
+    <p>
+      <a href="https://www.google.dk/maps/place/Kastanjehaven+10,+7080+B%C3%B8rkop/@55.6193858,6.7124789,7z/data=!4m5!3m4!1s0x464c9adc000fc347:0x9c1dcc5b5de99dfc!8m2!3d55.6286139!4d9.6508595"
+        target="_blank">
+        <i class="fas fa-map-marker-alt"></i>&nbsp;Kastanjehaven 10, 7080, Børkop, Denmark
+      </a>
+    </p>
+    <p>
+      <a href='mailto:marc.skov.madsen@gmail.com' target="_blank">
+        <i class="fas fa-envelope-square"></i>&nbsp;Email
+      </a>
+    </p>
 
 
+  </mat-card-content>
 </mat-card>
+<mat-divider></mat-divider>
+<app-credits></app-credits>
+<mat-divider></mat-divider>
+<app-about></app-about>
+<mat-divider></mat-divider>
+<app-follow-me></app-follow-me>

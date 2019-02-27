@@ -1,28 +1,20 @@
 <mat-toolbar color="primary">
-  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="secondary" id="toggle_sidenav_button">
-    <i class="material-icons">menu</i>
-  </button><br>
-  <span id="page_title" routerLink=''>&nbsp;{{title}}</span>
+  <button id="home_button" mat-button routerLink=''>&nbsp;{{title}}</button>
+  <button id="data_button" mat-button routerLink='' disabled><i class="fas fa-database"></i>&nbsp;Data</button>
+  <button id="models_button" mat-button routerLink='' disabled><i
+      class="fas fa-project-diagram"></i>&nbsp;Models</button>
+  <button id="docs_button" mat-button routerLink='' disabled><i class="fas fa-chart-bar"></i>&nbsp;Analytics</button>
+  <a id="blog_button" mat-button><i class="fas fa-pen"></i>&nbsp;Blog</a>
+  <a href='{{docs_url}}' mat-button id="docs_link"><i class="fas fa-book"></i>&nbsp;Docs</a>
+  <a href="{{source_url}}" target="_blank" mat-button><i class="fab fa-github"></i>&nbsp;Source</a>
   <span class="toolbar-spacer"></span>
-  <button id="login_button" mat-button routerLink='login'>Login</button>
-
+  <button id="login_button" mat-button routerLink='login' disabled><i
+      class="fas fa-sign-in-alt"></i>&nbsp;Login</button>
 </mat-toolbar>
-<mat-card>
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav #drawer mode="side" role="navigation" [opened]="false" [disableClose]="false" #sidenav (click)="sidenav.toggle()">
-      <mat-nav-list>
-        <mat-list-item routerLink='' id="home_link">Home</mat-list-item>
-        <mat-list-item routerLink='posts' id="posts_link">Posts</mat-list-item>
-        <!-- <mat-nav-list style="margin-left:10px;">
-          <mat-list-item routerLink=''>Item 1</mat-list-item>
-          <mat-list-item routerLink=''>Item 2</mat-list-item>
-        </mat-nav-list> -->
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <div id="main-content" width="100%">
-        <router-outlet></router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-</mat-card>
+<div id="main-content" width="100%">
+  <router-outlet></router-outlet>
+</div>
+<!-- <mat-card>
+<mat-card-content>
+  </mat-card-content>
+</mat-card> -->

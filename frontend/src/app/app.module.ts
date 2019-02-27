@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -22,7 +22,10 @@ import { PostUploadMarkdownComponent } from './components/blog/post-upload-markd
 import { AddPostComponent } from './components/blog/post-detail/add-post/add-post.component';
 import { EditPostComponent } from './components/blog/post-detail/edit-post/edit-post.component';
 import { ReadPostComponent } from './components/blog/post-detail/read-post/read-post.component';
-import { LoginComponent } from './components/general/auth/login/login.component'
+import { LoginComponent } from './components/general/auth/login/login.component';
+import { AboutComponent } from './base/about/about.component';
+import { CreditsComponent } from './base/credits/credits.component';
+import { FollowMeComponent } from './base/follow-me/follow-me.component';
 
 @NgModule({
   imports: [
@@ -46,6 +49,9 @@ import { LoginComponent } from './components/general/auth/login/login.component'
     EditPostComponent,
     ReadPostComponent,
     LoginComponent,
+    AboutComponent,
+    CreditsComponent,
+    FollowMeComponent,
   ],
   providers: [BlogService, UserService],
   bootstrap: [AppComponent]

@@ -76,3 +76,9 @@ and in a terminal
 .. _PythonOrg: www.python.org
 .. _GitScm: https://git-scm.com
 .. _Postgres: https://www.postgresql.org/
+
+Readings
+--------
+
+- How to handle CORS: https://www.techiediaries.com/django-angular-cli/
+- https://medium.com/swlh/django-angular-4-a-powerful-web-application-60b6fb39ef34

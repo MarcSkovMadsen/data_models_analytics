@@ -68,6 +68,7 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "rest_framework",
+    "django_filters",
 ]
 LOCAL_APPS = ["apps.users.apps.UsersAppConfig", "apps.docs.apps.DocsAppConfig"]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

@@ -1,0 +1,11 @@
+#image-content{
+    text-align: center;
+}
+#image-div{
+    display: inline-block;
+}
+img{
+    height: 50px;
+    max-width: 10%;
+    margin: 5px;
+}

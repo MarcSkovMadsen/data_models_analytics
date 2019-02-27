@@ -1,0 +1,8 @@
+<mat-divider></mat-divider>
+<mat-card>
+  <mat-card-title>Follow me</mat-card-title>
+  <mat-card-actions>
+    <a *ngFor="let url of URLS" href="{{url.url}}" target="_blank" mat-button><i
+        class="{{url.class}}"></i>&nbsp;{{url.title}}</a>
+  </mat-card-actions>
+</mat-card>

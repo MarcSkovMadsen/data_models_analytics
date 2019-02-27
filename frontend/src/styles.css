@@ -91,3 +91,7 @@
 .codehilite .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .codehilite .vm { color: #f8f8f2 } /* Name.Variable.Magic */
 .codehilite .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+a{
+    color: inherit;
+}
