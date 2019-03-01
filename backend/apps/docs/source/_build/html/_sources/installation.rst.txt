@@ -5,6 +5,7 @@ Setting up the paradigm from scratch
 Prerequisites:
 
 * Latest version of python from PythonOrg_ with pip and virtualenv.
+    Todo: https://realpython.com/python-virtual-environments-a-primer/
 * Latest version of git from from GitScm_.
 * Latest version of Postgres from Postgres_
 
@@ -17,6 +18,8 @@ Steps:
 
     mkdir project
     cd project
+
+Todo: Add .gitignore and configure remote
 
 2. Create a virtual environment
 

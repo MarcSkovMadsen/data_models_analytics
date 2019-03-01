@@ -1,0 +1,6 @@
+# Pelican
+pelican # Static Site Generator. See https://blog.getpelican.com/
+Markdown # Enables writing blog posts in Markdown. See https://python-markdown.github.io/
+
+# Tools
+invoke # Task execution tool & library. See http://www.pyinvoke.org/

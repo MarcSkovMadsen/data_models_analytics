@@ -1,7 +1,22 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "api"
+		},
+		{
+			"path": "backend"
+		},
+		{
+			"path": "blog"
+		},
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "sandbox"
+		},
+		{
+			"path": "other\\ng6xs"
 		}
 	],
 	"settings": {

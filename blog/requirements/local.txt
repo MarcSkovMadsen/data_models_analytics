@@ -1,0 +1,5 @@
+-r ./base.txt
+pylint # Linting for Python See https://www.pylint.org/
+black # Auto code formatter for Python https://github.com/ambv/black
+mypy # Static Type checking for Python. See http://mypy-lang.org/
+livereload #https://github.com/lepture/python-livereload

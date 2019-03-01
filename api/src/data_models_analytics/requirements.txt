@@ -1,6 +1,0 @@
-pandas
-beautifulsoup4==4.7.1
-openpyxl
-requests
-xlsxwriter
-xlrd

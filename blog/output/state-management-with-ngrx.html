@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>State management with ngrx</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Data, Models and Analytics Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/i-dont-use.html">I don't use...</a></li>
+                    <li class="active"><a href="/category/pocs.html">POCs</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/state-management-with-ngrx.html" rel="bookmark"
+           title="Permalink to State management with ngrx">State management with ngrx</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-03-01T00:00:00+01:00">
+                Published: to 01 marts 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2018-03-01T00:00:00+01:00">
+                Updated: to 01 marts 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/marc-skov-madsen.html">Marc Skov Madsen</a>
+        </address>
+<p>In <a href="/category/pocs.html">POCs</a>.</p>
+<p>tags: <a href="/tag/angular.html">Angular</a> <a href="/tag/ngrx.html">ngrx</a> <a href="/tag/state-management.html">State Management</a> </p>
+</footer><!-- /.post-info -->      <p>A colleague suggested I learn state management in Angular using either <a href="https://github.com/ngxs/store">NGXS</a> or <a href="https://ngrx.io/">NGRX</a>. He recommended NGXS over NGRX as it seems to be better integrated with Angular.</p>
+<p>These notes documents the steps and learnings.</p>
+<h2>State is really just data</h2>
+<p>A typical web application has the following six types of state:</p>
+<ul>
+<li>Server state</li>
+<li>Persistent state (subset of the server state stored on the client, in memory)</li>
+<li>The URL and router state</li>
+<li>Client state (client state equal to URL and router state)</li>
+<li>Transient client state (client state not in URL)</li>
+<li>Local UI state</li>
+</ul>
+<p>In my head I visualize the above as sets.</p>
+<p>The architecture of state can be shown as</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/0*I3jAfhOZPcF1Mjil." alt="state architecture" width="600"/></p>
+<h2>This is how ngx state management works</h2>
+<p>The architecture of the ngxs state management can be shown as</p>
+<p><img src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L9CoGJCq3UCfKJ7RCUg%2F-LZoLccbzvZjhcgtrQ0z%2F-LZoLea7ZgBJTqq73TVX%2Fdiagram.png?generation=1551361553530490&alt=media" alt="state architecture" width="600"/></p>
+<p>Notes:</p>
+<ul>
+<li><em>States</em> are classes that define a state container.</li>
+<li><em>Action types</em> should contain three parts '[Context] verb Entity'. For example '[Zoo] feed Panda'</li>
+<li>
+<ul>
+<li>Actions are normally dispatched from container components such as router pages</li>
+</ul>
+</li>
+<li><em>Events</em> are actions that have already happened and we now need to react to them.</li>
+<li>In computing and telecommunications, the <em>payload</em> is the part of transmitted data that is the actual intended message.</li>
+</ul>
+<h1>Ahh. Let's play with some examples</h1>
+<ul>
+<li>Example 1: <a href="https://appdividend.com/2018/07/03/angular-ngxs-tutorial-with-example-from-scratch/">Angular NGXS Tutorial With Example From Scratch</a></li>
+</ul>
+<h1>How to install</h1>
+<p><a href="https://ngxs.gitbook.io/ngxs/getting-started/installation">Installation of ngxs.store</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -35,7 +35,7 @@ Technologies
 Tools
 =====
 
-- **Code Editor**: `Visual Studio Code`_ (`VS Code Django Tutorial`_, `VS Code Angular Tutorial`_)
+- **Code Editor**: `Visual Studio Code`_ (`VS Code Django Tutorial`_, `VS Code Angular Tutorial`_, `_VS Code multi-root-workspaces`)
 - **Git Cli**: `Git`_
 - **Diagram Editor**: Dia_
 
@@ -109,6 +109,7 @@ The below packages are listed in my `requirements.test.text`_ file.
 .. _Recommonmark: https://recommonmark.readthedocs.io/en/latest/
 .. _VS Code Django Tutorial: https://code.visualstudio.com/docs/python/tutorial-django
 .. _VS Code Angular Tutorial: https://code.visualstudio.com/docs/nodejs/angular-tutorial
+.. _VS Code multi-root-workspaces: https://code.visualstudio.com/docs/editor/multi-root-workspaces
 
 
 

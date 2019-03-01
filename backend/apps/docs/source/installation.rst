@@ -64,6 +64,8 @@ See
 When you are done you should be able to succesfully run 'Python: Discover Unit Tests" in VS Code
 and in a terminal
 
+Todo: Api Package https://python-packaging.readthedocs.io/en/latest/minimal.html
+
 .. code-block: bash
 
     pytest

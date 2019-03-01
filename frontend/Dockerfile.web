@@ -3,7 +3,7 @@
 # docker build -t web:latest .
 # docker run -p 80:80 web:latest
 
-# Stage 0, "build-stage", based on Node.js, to build and compile the frontend
+# Stage 0, "build-stage", based on Node.js, to build and compile the web frontend
 FROM tiangolo/node-frontend:10 as build-stage
 WORKDIR /app
 COPY package*.json /app/

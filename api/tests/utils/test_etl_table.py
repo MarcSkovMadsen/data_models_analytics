@@ -9,11 +9,10 @@ import os
 from data_models_analytics.utils.etl_table import ETLTable
 
 TIMEZONE = pytz.timezone("CET")
-ETLTABLE_XLSX_FILE = 'api/tests/utils/fixtures/etl_table.xlsx'
+ETLTABLE_XLSX_FILE = 'tests/utils/fixtures/etl_table.xlsx'
 
 # endregion imports
 # region fixtures
-
 
 @pytest.fixture
 def timezone():

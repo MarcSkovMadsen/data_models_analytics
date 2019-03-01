@@ -1,0 +1,25 @@
+ipython # Python Shell
+py-make # Brings basic Makefile support to any system with Python
+
+# Documentation
+# ------------------------------------------------------------------------------
+Sphinx # https://github.com/sphinx-doc/sphinx
+sphinx_rtd_theme # Documentation theme
+recommonmark # Documentation using Markdown
+sphinx-autobuild # Auto build and live reload server
+
+# Testing
+# ------------------------------------------------------------------------------
+mypy # https://github.com/python/mypy
+pytest # https://github.com/pytest-dev/pytest
+pytest-sugar # https://github.com/Frozenball/pytest-sugar
+pytest-mock #https://github.com/pytest-dev/pytest-mock/
+ipdb # https://github.com/gotcha/ipdb
+freezegun # https://github.com/spulec/freezegun
+
+# Code quality
+# ------------------------------------------------------------------------------
+# flake8 # https://github.com/PyCQA/flake8
+pylint # Linter.
+#black # Auto formatter.
+coverage # https://github.com/nedbat/coveragepy
