@@ -56,7 +56,7 @@ You can finalize the installation by testing, linting and type checking the pack
 
 ### Testing
 
-You can run all tests using the pytest
+You can run all tests using [Pytest](https://docs.pytest.org/en/latest/)
 
 ```bash
 pytest
@@ -90,7 +90,7 @@ mypy data_models_analytics/hello_world.py
 
 Please note:
 
-- We currently do have any custom settings for the mypy. If we did they would be located in a mypy.ini file.
+- We currently don't have any custom settings for the mypy. If we did they would be located in a mypy.ini file.
 - You can configure editors like VS Code and Pycharm to automatically run mypy.
 
 ## Deployment
@@ -99,7 +99,7 @@ The API is currently not deployed.
 
 ## Contributing
 
-If you have comments or questions feel free to post them on Github.
+If you have comments or questions feel free to post them on [Github](https://github.com/MarcSkovMadsen/data-models-analytics).
 
 ## Versioning
 
@@ -107,16 +107,8 @@ We currently don't version this package.
 
 ## Authors
 
-- Marc Skov Madsen [Email](mailto:marc.skov.madsen@gmail.com)
+- Marc Skov Madsen ([Email](mailto:marc.skov.madsen@gmail.com), [LinkedIn](https://www.linkedin.com/in/marcskovmadsen/))
 
 ## License
 
-This project can be used and modified by Ørsted employees only.
-
-## Acknowledgments
-
-## Usefull Links
-
-* [Git](https://orsteddcsmarketsanalytics.visualstudio.com/orsteddcsmarketsanalytics/_git/orsteddcsmarketsanalytics)
-* [Docker Swarm Test Cluster](https://ucp-test.de-prod.dk)
-* [VSTS](https://dongeonsanddragons.visualstudio.com)
+This blog is released under the [MIT License](LICENSE).

@@ -15,9 +15,9 @@
 		{
 			"path": "sandbox"
 		},
-		{
-			"path": "other\\ng6xs"
-		}
+		// {
+		// 	"path": "other\\ng6xs"
+		// }
 	],
 	"settings": {
 		"terminal.integrated.env.windows": {

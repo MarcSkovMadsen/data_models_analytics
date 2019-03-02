@@ -3,7 +3,6 @@
 # Utils
 # ------------------------------------------------------------------------------
 ipython # Python Shell
-py-make # Brings basic Makefile support to any system with Python
 
 # Documentation
 # ------------------------------------------------------------------------------
