@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data, Models and Analytics Blog</title><link href="https://data-models-analytics.com/blog/" rel="alternate"></link><link href="https://data-models-analytics.com/blog/feeds/all.atom.xml" rel="self"></link><id>https://data-models-analytics.com/blog/</id><updated>2019-03-01T06:01:00+01:00</updated><entry><title>I don't use PipEnv</title><link href="https://data-models-analytics.com/blog/i-dont-use-pipenv.html" rel="alternate"></link><published>2019-03-01T06:01:00+01:00</published><updated>2019-03-01T06:01:00+01:00</updated><author><name>Marc Skov Madsen, PhD, CFA</name></author><id>tag:data-models-analytics.com,2019-03-01:/blog/i-dont-use-pipenv.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;I get an error when&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pipenv&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;black&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It's slow compared to a cycle of&lt;ol&gt;
+&lt;li&gt;Pip install \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Pip show \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Updating the requirements.txt file with '\&lt;package&gt;==\&lt;version&gt;'&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;I get an error when&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pipenv&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;black&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It's slow compared to a cycle of&lt;ol&gt;
+&lt;li&gt;Pip install \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Pip show \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Updating the requirements.txt file with '\&lt;package&gt;==\&lt;version&gt;'&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>State management with ngrx</title><link href="https://data-models-analytics.com/blog/state-management-with-ngrx.html" rel="alternate"></link><published>2018-03-01T00:00:00+01:00</published><updated>2018-03-01T00:00:00+01:00</updated><author><name>Marc Skov Madsen</name></author><id>tag:data-models-analytics.com,2018-03-01:/blog/state-management-with-ngrx.html</id><summary type="html">&lt;p&gt;A colleague suggested I learn and use state management in Angular. These notes documents the steps and learnings.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A colleague suggested I learn state management in Angular using either &lt;a href="https://github.com/ngxs/store"&gt;NGXS&lt;/a&gt; or &lt;a href="https://ngrx.io/"&gt;NGRX&lt;/a&gt;. He recommended NGXS over NGRX as it seems to be better integrated with Angular.&lt;/p&gt;
+&lt;p&gt;These notes documents the steps and learnings.&lt;/p&gt;
+&lt;h2&gt;State is really just data&lt;/h2&gt;
+&lt;p&gt;A typical web application has the following six types of state:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server state&lt;/li&gt;
+&lt;li&gt;Persistent state (subset of the server state stored on the client, in memory)&lt;/li&gt;
+&lt;li&gt;The URL and router state&lt;/li&gt;
+&lt;li&gt;Client state (client state equal to URL and router state)&lt;/li&gt;
+&lt;li&gt;Transient client state (client state not in URL)&lt;/li&gt;
+&lt;li&gt;Local UI state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my head I visualize the above as sets.&lt;/p&gt;
+&lt;p&gt;The architecture of state can be shown as&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/0*I3jAfhOZPcF1Mjil." alt="state architecture" width="600"/&gt;&lt;/p&gt;
+&lt;h2&gt;This is how ngx state management works&lt;/h2&gt;
+&lt;p&gt;The architecture of the ngxs state management can be shown as&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L9CoGJCq3UCfKJ7RCUg%2F-LZoLccbzvZjhcgtrQ0z%2F-LZoLea7ZgBJTqq73TVX%2Fdiagram.png?generation=1551361553530490&amp;alt=media" alt="state architecture" width="600"/&gt;&lt;/p&gt;
+&lt;p&gt;Some important definitions are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;States&lt;/em&gt; are classes that define a state container.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Action types&lt;/em&gt; should contain three parts '[Context] verb Entity'. For example '[Zoo] feed Panda'&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Actions are normally dispatched from container components such as router pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Events&lt;/em&gt; are actions that have already happened and we now need to react to them.&lt;/li&gt;
+&lt;li&gt;In computing and telecommunications, the &lt;em&gt;payload&lt;/em&gt; is the part of transmitted data that is the actual intended message.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ahh. Let's play with our first example&lt;/h2&gt;
+&lt;p&gt;This example is based on &lt;a href="https://appdividend.com/2018/07/03/angular-ngxs-tutorial-with-example-from-scratch/"&gt;Angular NGXS Tutorial With Example From Scratch&lt;/a&gt;. I needed to combine with &lt;a href="https://ngxs.gitbook.io/ngxs/getting-started/installation"&gt;Installation of ngxs.store&lt;/a&gt; for the installation.&lt;/p&gt;
+&lt;h3&gt;Steps&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ng new ng6xs
+&lt;span class="nb"&gt;cd&lt;/span&gt; ng6xs/
+npm install @ngxs/store --save
+npm install @ngxs/logger-plugin
+npm install @ngxs/devtools-plugin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I then tried to serve but got an error. I solved it by updating to "rxjs": "6.3.3" in package.json. See &lt;a href="https://github.com/MarkPieszak/aspnetcore-angular-universal/issues/714"&gt;Issue&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ng serve -o
+ng g c components/create --spec&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt;
+ng g c components/index --spec&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt;
+npm install bootstrap --save
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It works like it should&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://appdividend.com/wp-content/uploads/2018/07/Angular-State-Management-Pattern.png" alt="state architecture" width="600"/&gt;&lt;/p&gt;
+&lt;h2&gt;Quick question for my colleague&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I only see the Store imported in create.component.ts. Shouldn't it be imported and provided in the app.module.ts? Yes. But its imported and provided by&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;NgxsModule&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;@ngxs/store&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="nx"&gt;imports&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+    &lt;span class="nx"&gt;BrowserModule&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nx"&gt;NgxsModule&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;forRoot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;
+      &lt;span class="nx"&gt;UserState&lt;/span&gt;
+    &lt;span class="p"&gt;]),&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;My colleague further more recommended to use&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US"&gt;redux-devtools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ngxs router plugin&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.npmjs.com/package/@azure/msal-angular"&gt;microsoft angular plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and to study&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/finiteloop-systems/architect-design-build-scalable-angular-applications-ce336a3c153a"&gt;Architect, design &amp;amp; build scalable Angular applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;A second, more advanced example&lt;/h2&gt;
+&lt;p&gt;https://github.com/tommythongnguyen/Ngxs-Pizza-Order&lt;/p&gt;</content><category term="Angular"></category><category term="ngrx"></category><category term="State Management"></category></entry></feed>

@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Marc Skov Madsen, PhD, CFA'
 SITENAME = 'Data, Models and Analytics Blog'
 SITEURL = ''
+PORT=5500
 
 PATH = 'content'
 

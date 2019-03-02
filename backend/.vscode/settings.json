@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "c:\\Users\\masma\\source\\repos\\WPMarketAnalytics\\WPMarketAnalyticsApp\\env2\\Scripts\\python.exe",
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
     "restructuredtext.confPath": "${workspaceFolder}\\docs"
 }

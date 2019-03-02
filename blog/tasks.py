@@ -33,42 +33,42 @@ def build(c):
 
 @task
 def rebuild(c):
-    """`build` with the delete switch"""
+    """`build` local version of the site with the delete switch"""
     c.run("pelican -d -s pelicanconf.py")
 
 
-@task
-def regenerate(c):
-    """Automatically regenerate site upon file modification"""
-    c.run("pelican -r -s pelicanconf.py")
+# @task
+# def regenerate(c):
+#     """Automatically regenerate site upon file modification"""
+#     c.run("pelican -r -s pelicanconf.py")
 
 
-@task
-def serve(c):
-    """Serve site at http://localhost:8000/"""
+# @task
+# def serve(c):
+#     """Serve site at http://localhost:5500/"""
 
-    class AddressReuseTCPServer(RootedHTTPServer):
-        allow_reuse_address = True
+#     class AddressReuseTCPServer(RootedHTTPServer):
+#         allow_reuse_address = True
 
-    server = AddressReuseTCPServer(
-        CONFIG["deploy_path"], ("", CONFIG["port"]), ComplexHTTPRequestHandler
-    )
+#     server = AddressReuseTCPServer(
+#         CONFIG["deploy_path"], ("", CONFIG["port"]), ComplexHTTPRequestHandler
+#     )
 
-    sys.stderr.write("Serving on port {port} ...\n".format(**CONFIG))
-    server.serve_forever()
-
-
-@task
-def reserve(c):
-    """`build`, then `serve`"""
-    build(c)
-    serve(c)
+#     sys.stderr.write("Serving on port {port} ...\n".format(**CONFIG))
+#     server.serve_forever()
 
 
-@task
-def preview(c):
-    """Build production version of site"""
-    c.run("pelican -s publishconf.py")
+# @task
+# def reserve(c):
+#     """`build`, then `serve`"""
+#     build(c)
+#     serve(c)
+
+
+# @task
+# def preview(c):
+#     """Build production version of site"""
+#     c.run("pelican -s publishconf.py")
 
 
 @task
@@ -87,12 +87,12 @@ def livereload(c):
 
 @task
 def publish(c):
-    """Publish to production via rsync"""
+    """Publish to production, i.e. the backend static folder"""
     c.run("pelican -s publishconf.py")
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        "{} {production}:{dest_path}".format(
-            CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
-        )
-    )
+    # c.run(
+    #     'rsync --delete --exclude ".DS_Store" -pthrvz -c '
+    #     "{} {production}:{dest_path}".format(
+    #         CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
+    #     )
+    # )
 

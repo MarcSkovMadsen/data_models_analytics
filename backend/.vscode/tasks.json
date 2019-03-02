@@ -5,12 +5,12 @@
     "tasks": [
         {
             "label": "runserver",
-            "type": "process",
-            "command": "${config:python.pythonPath}",
-            "args": [
-                "manage.py",
-                "runserver"
-            ],
+            "type": "shell",
+            "command": "source .venv/Scripts/activate && python manage.py runserver",
+            // "args": [
+            //     "manage.py",
+            //     "runserver"
+            // ],
             "problemMatcher": []
         }
     ]

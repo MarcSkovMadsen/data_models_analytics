@@ -7,5 +7,5 @@ app_name = "docs"
 urlpatterns = [
     path("", serve, {"document_root": settings.DOCS_ROOT, "path": "index.html"}),
     re_path("(?P<path>.*)$", serve, {"document_root": settings.DOCS_ROOT}),
-    path("<str:path>", serve, {"document_root": settings.DOCS_ROOT}),
+    # path("<str:path>", serve, {"document_root": settings.DOCS_ROOT}),
 ]

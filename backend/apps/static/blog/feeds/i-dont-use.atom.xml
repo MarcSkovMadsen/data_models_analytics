@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data, Models and Analytics Blog - I don't use...</title><link href="https://data-models-analytics.com/blog/" rel="alternate"></link><link href="https://data-models-analytics.com/blog/feeds/i-dont-use.atom.xml" rel="self"></link><id>https://data-models-analytics.com/blog/</id><updated>2019-03-01T06:01:00+01:00</updated><entry><title>I don't use PipEnv</title><link href="https://data-models-analytics.com/blog/i-dont-use-pipenv.html" rel="alternate"></link><published>2019-03-01T06:01:00+01:00</published><updated>2019-03-01T06:01:00+01:00</updated><author><name>Marc Skov Madsen, PhD, CFA</name></author><id>tag:data-models-analytics.com,2019-03-01:/blog/i-dont-use-pipenv.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;I get an error when&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pipenv&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;black&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It's slow compared to a cycle of&lt;ol&gt;
+&lt;li&gt;Pip install \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Pip show \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Updating the requirements.txt file with '\&lt;package&gt;==\&lt;version&gt;'&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;I get an error when&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pipenv&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;black&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;It's slow compared to a cycle of&lt;ol&gt;
+&lt;li&gt;Pip install \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Pip show \&lt;package&gt;&lt;/li&gt;
+&lt;li&gt;Updating the requirements.txt file with '\&lt;package&gt;==\&lt;version&gt;'&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry></feed>

@@ -8,6 +8,7 @@ import { environment } from '../../../environments/environment';
 })
 export class NavigationComponent implements OnInit {
   title = 'Data, Models and Analytics';
+  blog_url = environment.api_url + 'blog/index.html';
   docs_url = environment.api_url + 'docs/';
   source_url = 'https://github.com/MarcSkovMadsen/data-models-analytics';
   constructor() { }

@@ -234,5 +234,9 @@ SOCIALACCOUNT_ADAPTER = "apps.users.adapters.SocialAccountAdapter"
 DOCS_ROOT = str(ROOT_DIR("apps/docs/source/_build/html"))
 DOCS_URL = "/docs/"
 
+# docs
+BLOG_ROOT = str(ROOT_DIR("apps/blog/source"))
+BLOG_URL = "/blog/"
+
 # Your stuff...
 # ------------------------------------------------------------------------------
